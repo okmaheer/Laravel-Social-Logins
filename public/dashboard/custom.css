@@ -1,0 +1,30 @@
+.dt-button {
+    margin-right: 0.2rem !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(87, 102, 218, 0.15) !important;
+    color: #5766da !important;
+    text-decoration: none;
+}
+
+.break-long-text {
+    word-break:break-all !important;
+}
+
+@media print
+{
+    .dataTables_info, .dataTables_paginate, .dataTables_length, .dt-buttons, .dataTables_filter
+    {
+        display: none !important;
+    }
+
+    html{
+       background: white !important;
+    }
+}
+.page-content {
+    margin-top: 0 !important;
+}
