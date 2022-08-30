@@ -19,27 +19,41 @@ class AuthController extends Controller
 
    public function githubCallback(Request $request){
     $userData = Socialite::driver('github')->user();
-    $request->validate([
-        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-     
-    ]);
-
-
-
-    $uuid = Str::uuid()->toString();
   
-    $user = User::create([
-        'name' => $userData->name,
-        'email' => $userData->email,
-        'password' => Hash::make($uuid),
-        'auth_type'=>'github',
-        'active'=> 1,
-    ]);
+    $user= User::where('email',$userData->email)
+           ->where('auth_type','github')
+           ->first();
+           if($user){
+          
+            Auth::login($user);
+            return redirect(RouteServiceProvider::HOME);
+           }
+           else{
+
+            // dd($userData);
+            $uuid = Str::uuid()->toString();
+  
+            $user = User::create([
+                'name' => $userData->name,
+                'email' => $userData->email,
+                'password' => Hash::make($uuid),
+                'auth_type'=>'github',
+                'active'=> 1,
+            ]);
+
+            Auth::login($user);
+
+            return redirect(RouteServiceProvider::HOME);
+
+           }
+
+
+  
 
  
-    Auth::login($user);
+    
 
-    return redirect(RouteServiceProvider::HOME);
+  
    }
 
    public function googleRedirect(Request $request){
