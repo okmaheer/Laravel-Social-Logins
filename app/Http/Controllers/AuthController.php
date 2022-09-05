@@ -39,7 +39,7 @@ class AuthController extends Controller
                 'password' => Hash::make($uuid),
                 'auth_type'=>'github',
                 'active'=> 1,
-            ]);
+            ])
 
             Auth::login($user);
 
