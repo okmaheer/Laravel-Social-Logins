@@ -12,12 +12,12 @@ use Laravel\Socialite\Facades\Socialite;
 
 class AuthController extends Controller
 {
-   public function githubRedirect(Request $request){
+   public function githubRedirect(){
 
     return Socialite::driver('github')->redirect();
    }
 
-   public function githubCallback(Request $request){
+   public function githubCallback(){
     $userData = Socialite::driver('github')->user();
   
     $user= User::where('email',$userData->email)
@@ -56,12 +56,12 @@ class AuthController extends Controller
   
    }
 
-   public function googleRedirect(Request $request){
+   public function googleRedirect(){
 
     return Socialite::driver('google')->redirect();
    }
 
-   public function googleCallback(Request $request){
+   public function googleCallback(){
     $userData = Socialite::driver('google')->user();
 
 
