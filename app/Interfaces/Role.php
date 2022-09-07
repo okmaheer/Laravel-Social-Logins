@@ -17,7 +17,7 @@ class Role extends Model implements Permissions
     protected $table = 'roles';
     protected $dates = [
         'created_at', 'updated_at', 'deleted_at'
-    ]; 
+    ];
     protected $fillable = [
         'name',
         'label',
