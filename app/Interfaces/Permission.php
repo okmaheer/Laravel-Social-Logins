@@ -16,7 +16,7 @@ class Permission extends Model implements Permissions
     protected $table = 'permissions';
     protected $fillable = [
         'name', 'label', 'model'
-    ]; 
+    ];
     protected $dates = [
         'created_at', 'updated_at', 'deleted_at'
     ];
