@@ -43,7 +43,7 @@
                                               role="alert"><strong>{{ $message }}</strong></span>
                                         @enderror
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="col-lg-4">
                                     <div class="form-group">
                                         {!! Html::decode(Form::label('users' ,'Users' ,['class'=>' col-form-label']))   !!}
