@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card" style="
-                        height: 84%;">
+                        height: 84%;"> 
                         <div class="card-body mb-0">
                             <div class="row">
                                 <div class="col-8 align-self-center">
