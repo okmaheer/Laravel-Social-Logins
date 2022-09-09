@@ -11,7 +11,7 @@
 <div class="page-content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12"> 
+            <div class="col-12">
                 <div class="card">
                     <div class="card-body">
                         {!! Form::open(['route' => ['dashboard.accounts.users.store'], 'method' => 'POST', 'files' => true, 'class' => 'solid-validation'] ) !!}
