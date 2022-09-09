@@ -13,7 +13,7 @@
 @endsection
 @section('content')
 
-@include('includes.dashboard-breadcrumbs') 
+@include('includes.dashboard-breadcrumbs')
 
 @section('body')
 <div class="page-content">
