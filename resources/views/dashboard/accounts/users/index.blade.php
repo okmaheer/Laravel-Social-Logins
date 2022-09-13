@@ -3,7 +3,7 @@
 @section('innerStyleSheet')
     @include('includes.datatable-css')
     <link href="{{ asset('dashboard/plugins/select2/select2.min.css') }}" rel="stylesheet" type="text/css"/>
-@endsection
+@endsectio
 @section('content')
 
     @include('includes.dashboard-breadcrumbs')
