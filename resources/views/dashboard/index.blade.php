@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 @section('page_title', $page_title)
-@section('content'
+@section('content')
 @section('innerStyleSheet')
     <link rel="stylesheet" href="{{ asset('dashboard/plugins/dropify/css/dropify.min.css') }}">
     <link href="{{ asset('dashboard/plugins/select2/select2.min.css') }}" rel="stylesheet" type="text/css" />
