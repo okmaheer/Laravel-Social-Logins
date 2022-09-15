@@ -28,7 +28,7 @@
                                     <div class="icon-info text-right">
                                         <i class="dripicons-cart bg-soft-warning"></i>
                                     </div>
-                                </div>
+                                  </div>
                                 <!--end col-->
                             </div>
                             <!--end row-->
