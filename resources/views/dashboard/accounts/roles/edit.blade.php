@@ -37,7 +37,7 @@
                                 <div class="col-lg-4">
                                     <div class="form-group">
                                         {!! Html::decode(Form::label('label' ,'Label <i class="text-danger">*</i>' ,['class'=>' col-form-label']))   !!}
-                                        {!! Form::text('l abel', null, ['class' => 'form-control', 'required', 'id' => 'name','placeholder'=>'Enter Label In Camel Case', 'required']) !!}
+                                        {!! Form::text('label', null, ['class' => 'form-control', 'required', 'id' => 'name','placeholder'=>'Enter Label In Camel Case', 'required']) !!}
                                         @error('label')
                                         <span class="invalid-feedback d-block"
                                               role="alert"><strong>{{ $message }}</strong></span>
